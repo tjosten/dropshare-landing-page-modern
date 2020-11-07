@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dropshare - Link Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://dropshare.app/assets/css/custom.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="https://dropshare.app/assets/css/theme.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="https://dropshare.app/favicon.png" />
+    <meta name="generator" content="Dropshare http://dropshare.app" />
+    <meta property="twitter:card" content="photo" />
+    <meta property="twitter:image" content="__PREVIEWURL__" [^] />
+    <meta property="twitter:title" content="__FILENAME__" />
+    <title>__FILENAME__</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var file = "__PREVIEWURL__";
+        var extension = file.split(".").pop();
+        if (
+          extension == "jpg" ||
+          extension == "png" ||
+          extension == "mp4" ||
+          extension == "mov" ||
+          extension == "txt" ||
+          extension == "webm" ||
+          extension == "mp3" ||
+          extension == "wav" ||
+          extension == "aiff"
+        ) {
+        } else {
+          $("#preview-div").hide();
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <section class="bg-gradient text-white p-0 o-hidden">
+      <div
+        class="container min-vh-100 d-flex flex-column justify-content-top text-center py-4 py-md-5"
+      >
+        <a
+          class="navbar-brand navbar-brand-dynamic-color fade-page color-white"
+          style="color: #fff"
+          href="https://dropshare.app"
+        >
+          <img
+            alt="Dropshare"
+            class="noscrolled"
+            src="https://dropshare.app/assets/img/logos/dropshare-light@3x.png"
+            height="42"
+            width="42"
+          />
+          Dropshare
+        </a>
+        <div class="my-5">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <h2>__FILENAME__</h2>
+              <div class="lead">
+                <p>__SHAREDATE__</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center" id="preview-div">
+          <div class="col-xl-8 col-lg-9 col-md-10">
+            <div
+              class="card card-body bg-white flex-row flex-wrap justify-content-around"
+            >
+              <div>__PREVIEW__</div>
+            </div>
+          </div>
+        </div>
+        <div class="download mt-3">
+          <a href="__PATH__" class="btn btn-primary" download="__FILENAME__"
+            >Download</a
+          ><br />
+          <p class="text-muted mt-2">__FILESIZE__</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
