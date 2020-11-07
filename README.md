@@ -1,1 +1,1 @@
-![Screenshot](https://raw.githubusercontent.com/tjosten/dropshare-landing-page-modern/main/example.png)
+![Screenshot](https://raw.githubusercontent.com/tjosten/dropshare-landing-page-modern/main/preview.png)
